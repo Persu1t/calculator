@@ -1,6 +1,9 @@
+// buttons component
 import React from 'react'
 import styles from "../styles/buttons.module.css"
+// importing  useDispatch and useSelector from react redux
 import { useDispatch, useSelector } from 'react-redux'
+// rimporting actions and calculatrorSelector from redux
 import { actions, calculatorSelector } from '../redux/calculatorSlice'
 
 const Buttons = () => {
@@ -13,22 +16,27 @@ const Buttons = () => {
     const dispatch = useDispatch()
 
     function handleButtonsClick(button) {
+        // dispatching actions
         dispatch(actions.initialNumberCheck(button))
     }
 
     function handleOperationButtonClick(operation) {
+        // dispatching actions
         dispatch(actions.operationInput(operation))
     }
 
     function secondNumber(button) {
+        // dispatching actions
         dispatch(actions.secondNumberInput(button))
     }
 
     function performOperation() {
+        // dispatching actions
         dispatch(actions.outPutAfterOperation())
     }
 
     function handleCancle() {
+        // dispatching actions
         dispatch(actions.clearScreen())
     }
 
