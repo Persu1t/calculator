@@ -1,0 +1,60 @@
+.buttonsContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    font-size: x-large;
+    border: 1px solid rgb(255, 255, 255);
+}
+.btnZero{
+    font-size: x-large;
+    border: 1px solid rgb(255, 255, 255);
+    width: 169%;
+    text-align:start;
+}
+.zeroBtncontainer{
+    width: 54%;
+}
+.zeroButtonLi{
+    display: flex;
+    justify-content: space-between;
+}
+.numberButtons{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.operationButtons{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    margin-top: 10vh
+}
+
+.equalsAndCancel{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .buttonsContainer{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .operationButtons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+}
